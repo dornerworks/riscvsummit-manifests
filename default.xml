@@ -63,6 +63,11 @@
     <linkfile dest="start-container.sh"
               src="start-container.sh"/>
   </project>
+  <project name="seL4-CAmkES-L4v-dockerfiles"
+           path="tools/DockerFiles"
+           revision="81adee8e8cb1e36a445a5967999520b6284206ba"
+           remote="upstream-sel4proj"
+           />
 
   <!-- Main Project -->
   <project name="sel4test.git"
