@@ -1,0 +1,75 @@
+<!--
+     Copyright 2017, Data61, DornerWorks
+     Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+     ABN 41 687 119 230.
+     This software may be distributed and modified according to the terms of
+     the BSD 2-Clause license. Note that NO WARRANTY is provided.
+     See "LICENSE_BSD2.txt" for details.
+     @TAG(DORNERWORKS_DATA61_BSD)
+-->
+
+<manifest>
+  <remote fetch="https://github.com/nanopb" name="nanopb"/>
+  <remote fetch="https://github.com/seL4" name="upstream-seL4"/>
+  <remote fetch="https://github.com/sel4proj" name="upstream-sel4proj"/>
+  <remote fetch="https://github.com/Jesse-Millwood" name="jesse-github"/>
+  <remote fetch="https://bitbucket.org/riscvsummit/" name="riscvsummit"/>
+  <default remote="upstream-seL4" revision="master"/>
+
+  <!-- Core Data61 Repos -->
+  <project name="seL4.git"
+           path="kernel"
+           revision="fc251b5067aa6737409d326b0e7c68e24f286ab7"/>
+  <project name="musllibc.git"
+           path="projects/musllibc"
+           revision="1c6350ea6149e8a6b7de8890c34ba3ed615afe60"/>
+  <project name="seL4_libs.git"
+           path="projects/seL4_libs"
+           revision="586ab96254fc5af6bb1a7bab0b0ad6cacf1dfe87"/>
+  <project name="seL4_tools.git"
+           path="tools/seL4"
+           revision="586ab96254fc5af6bb1a7bab0b0ad6cacf1dfe87">
+    <linkfile dest="CMakeLists.txt"
+              src="cmake-tool/default-CMakeLists.txt"/>
+    <linkfile dest="init-build.sh"
+              src="cmake-tool/init-build.sh"/>
+    <linkfile dest="griddle"
+              src="cmake-tool/griddle"/>
+  </project>
+  <project name="sel4_projects_libs"
+           path="projects/sel4_projects_libs"
+           remote="upstream-sel4proj"
+           revision="62afbd9251c73182c0ea4381b38848d363a86802"/>
+  <project name="sel4runtime.git"
+           path="projects/sel4runtime"
+           revision="7b71e82ca6802a712475d0e523e689f190303bd3"
+           remote="upstream-sel4proj"/>
+  <project name="util_libs.git"
+           path="projects/util_libs"
+           revision="e935f281157b963224b5881d9d2bca6df60a0254"/>
+  <project name="nanopb"
+           remote="nanopb"
+           revision="847ac296b50936a8b13d1434080cef8edeba621c"/>
+  <project name="riscv-pk"
+           path="tools/riscv-pk"
+           remote="upstream-sel4proj"
+           revision="d3293c7c23e923338318f3860b2f20dd0b51a016"
+           upstream="fix-32bit"/>
+  <!-- Extra Repos -->
+  <project name="seL4Extra"
+           path="tools/sel4Extra"
+           remote="jesse-github"
+           revision="fix-cargo-build-dir">
+    <linkfile dest="start-container.sh"
+              src="start-container.sh"/>
+  </project>
+
+  <!-- Main Project -->
+  <project name="sel4test.git"
+           path="projects/sel4test"
+           revision="cc9432df1ff88c3d52778aece885c9c7df8c3f28"
+           upstream="master">
+    <linkfile dest="easy-settings.cmake"
+              src="easy-settings.cmake"/>
+  </project>
+</manifest>
