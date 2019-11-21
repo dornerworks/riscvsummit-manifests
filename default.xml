@@ -19,16 +19,16 @@
   <!-- Core Data61 Repos -->
   <project name="seL4.git"
            path="kernel"
-           revision="fc251b5067aa6737409d326b0e7c68e24f286ab7"/>
+           revision="ff216025041bfab6a45080eaabda2ff4af5db3e9"/>
   <project name="musllibc.git"
            path="projects/musllibc"
            revision="1c6350ea6149e8a6b7de8890c34ba3ed615afe60"/>
   <project name="seL4_libs.git"
            path="projects/seL4_libs"
-           revision="586ab96254fc5af6bb1a7bab0b0ad6cacf1dfe87"/>
+           revision="c4e061572c9acd2915fa5f1dee10353db391e45a"/>
   <project name="seL4_tools.git"
            path="tools/seL4"
-           revision="586ab96254fc5af6bb1a7bab0b0ad6cacf1dfe87">
+           revision="afbad19d98166ff6c2b92696f598e92dc75da6ee">
     <linkfile dest="CMakeLists.txt"
               src="cmake-tool/default-CMakeLists.txt"/>
     <linkfile dest="init-build.sh"
@@ -39,14 +39,14 @@
   <project name="sel4_projects_libs"
            path="projects/sel4_projects_libs"
            remote="upstream-sel4proj"
-           revision="62afbd9251c73182c0ea4381b38848d363a86802"/>
+           revision="33cf99b5ebd36c0ecd2032a4b76f6fb992ad1016"/>
   <project name="sel4runtime.git"
            path="projects/sel4runtime"
            revision="7b71e82ca6802a712475d0e523e689f190303bd3"
            remote="upstream-sel4proj"/>
   <project name="util_libs.git"
            path="projects/util_libs"
-           revision="e935f281157b963224b5881d9d2bca6df60a0254"/>
+           revision="4e14660568aa82b62402a4bdfea234f9dd0c3140"/>
   <project name="nanopb"
            remote="nanopb"
            revision="847ac296b50936a8b13d1434080cef8edeba621c"/>
@@ -59,13 +59,13 @@
   <project name="seL4Extra"
            path="tools/sel4Extra"
            remote="riscvsummit"
-           revision="fix-cargo-build-dir">
+           revision="master">
     <linkfile dest="start-container.sh"
               src="start-container.sh"/>
   </project>
   <project name="seL4-CAmkES-L4v-dockerfiles"
            path="tools/DockerFiles"
-           revision="81adee8e8cb1e36a445a5967999520b6284206ba"
+           revision="b3960e5366f50cf45e476cf3fa36597251e92966"
            remote="upstream-sel4proj"
            />
 
