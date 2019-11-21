@@ -58,7 +58,7 @@
   <!-- Extra Repos -->
   <project name="seL4Extra"
            path="tools/sel4Extra"
-           remote="jesse-github"
+           remote="riscvsummit"
            revision="fix-cargo-build-dir">
     <linkfile dest="start-container.sh"
               src="start-container.sh"/>
