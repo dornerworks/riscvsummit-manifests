@@ -26,8 +26,6 @@
   <project name="seL4_tools.git"
            path="tools/seL4"
            revision="afbad19d98166ff6c2b92696f598e92dc75da6ee">
-    <linkfile dest="CMakeLists.txt"
-              src="cmake-tool/default-CMakeLists.txt"/>
     <linkfile dest="init-build.sh"
               src="cmake-tool/init-build.sh"/>
     <linkfile dest="griddle"
