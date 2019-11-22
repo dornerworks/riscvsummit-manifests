@@ -69,6 +69,12 @@
            revision="master">
     <linkfile dest="start-container.sh"
               src="start-container.sh"/>
+    <linkfile dest="run-build.sh"
+              src="run-build.sh"/>
+    <linkfile dest="run-renode.sh"
+              src="run-renode.sh"/>
+    <linkfile dest="run-robot.sh"
+              src="run-robot.sh"/>
   </project>
 
   <!-- Main Project -->
