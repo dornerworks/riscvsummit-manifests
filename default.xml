@@ -17,9 +17,6 @@
   <default remote="upstream-seL4" revision="master"/>
 
   <!-- Core Data61 Repos -->
-  <project name="seL4.git"
-           path="kernel"
-           revision="ff216025041bfab6a45080eaabda2ff4af5db3e9"/>
   <project name="musllibc.git"
            path="projects/musllibc"
            revision="1c6350ea6149e8a6b7de8890c34ba3ed615afe60"/>
@@ -55,6 +52,16 @@
            remote="upstream-sel4proj"
            revision="d3293c7c23e923338318f3860b2f20dd0b51a016"
            upstream="fix-32bit"/>
+  <!-- Altered Upstream Repos -->
+  <project name="seL4.git"
+           path="kernel"
+           remote="riscvsummit"
+           revision="8d7cd8e6be52590520cc2ad9832426c6ca768571"/>
+  <project name="seL4-CAmkES-L4v-dockerfiles"
+           path="tools/DockerFiles"
+           revision="b3960e5366f50cf45e476cf3fa36597251e92966"
+           remote="upstream-sel4proj"
+           />
   <!-- Extra Repos -->
   <project name="seL4Extra"
            path="tools/sel4Extra"
@@ -63,11 +70,6 @@
     <linkfile dest="start-container.sh"
               src="start-container.sh"/>
   </project>
-  <project name="seL4-CAmkES-L4v-dockerfiles"
-           path="tools/DockerFiles"
-           revision="b3960e5366f50cf45e476cf3fa36597251e92966"
-           remote="upstream-sel4proj"
-           />
 
   <!-- Main Project -->
   <project name="sel4test.git"
