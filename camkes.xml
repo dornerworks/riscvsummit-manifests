@@ -85,8 +85,8 @@
   <!-- Altered Repos -->
   <project name="seL4.git"
            path="kernel"
-           remote="riscvsummit"
-           revision="renode"/>
+           remote="dornerworks"
+           revision="riscvsummit"/>
   <project name="global-components.git"
            path="projects/global-components"
            remote="dornerworks"
