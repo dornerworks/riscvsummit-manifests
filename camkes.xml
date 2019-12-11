@@ -15,7 +15,7 @@
   <remote fetch="https://github.com/NICTA" name="nicta"/>
   <remote fetch="https://github.com/tass-belgium" name="picotcp"/>
   <remote fetch="https://bitbucket.org/riscvsummit" name="riscvsummit"/>
-  <remote fetch="https://github.com/dornerworks" name="dornerworks"
+  <remote fetch="https://github.com/dornerworks" name="dornerworks"/>
   <remote fetch="https://github.com/seL4" name="seL4"/>
 
   <default remote="seL4" revision="master"/>

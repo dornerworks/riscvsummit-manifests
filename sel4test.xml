@@ -14,7 +14,7 @@
   <remote fetch="https://github.com/sel4proj" name="upstream-sel4proj"/>
   <remote fetch="https://github.com/Jesse-Millwood" name="jesse-github"/>
   <remote fetch="https://bitbucket.org/riscvsummit/" name="riscvsummit"/>
-  <remote fetch="https://github.com/dornerworks" name="dornerworks"
+  <remote fetch="https://github.com/dornerworks" name="dornerworks"/>
   <default remote="upstream-seL4" revision="master"/>
 
   <!-- Core Data61 Repos -->
